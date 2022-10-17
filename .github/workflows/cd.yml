@@ -1,9 +1,9 @@
-name: Continuous Deployment Workflow
+name: Continuous Deployment workflow
 
 on:
   push:
     branches:
-    - master
+      - master
 
   jobs:
     cd:
@@ -17,4 +17,3 @@ on:
           run: npm run build
         - name: Deploy
           run: npm run deploy
-
